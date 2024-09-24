@@ -21,8 +21,8 @@ class TestHomePage(BaseClass):
             WebDriverWait(self.driver, 10).until(
                 EC.staleness_of(logo))
             print("Page refreshed after clicking the Logo.")
-        except:
-            print("Page did not refresh.")
+        except Exception as e:
+            print(e)
 
     def test_about_us(self):
 
