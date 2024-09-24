@@ -26,7 +26,7 @@ def setup(request):
         driver = webdriver.Firefox()
 
     driver.get("https://pf.com.pk/")
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(10)
     driver.maximize_window()
     request.cls.driver = driver
 
